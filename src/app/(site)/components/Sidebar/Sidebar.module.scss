@@ -1,0 +1,87 @@
+@import '@/styles/mixin.scss';
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: 100%;
+    svg{
+        fill: $primary;
+    }
+}
+
+.firstLevel{
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.firstLevel:hover span,
+.firstLevelActive span{
+    color: $primary;
+}
+.firstLevel svg{
+    transition: fill 0.3s ease-in-out;
+}
+.firstLevel:hover svg,
+.firstLevelActive svg{
+    fill: $primary;
+}
+
+.secondBlock{
+    margin-left: 9px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 32px;
+    border-left: 1px solid grey;
+}
+
+.secondLevel{
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: grey;
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+.secondLevelBlock{
+    display: none;
+}
+
+.secondLevelBlockOpened{
+    display: block;
+
+}
+.secondLevelBlockOpened:last-child{
+    margin-bottom: 20px
+}
+
+.thirdLevel{
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    color: $text;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.thirdLevelActive,
+.thirdLevel:hover{
+    color: $primary;
+}
+
+.logoBlock{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

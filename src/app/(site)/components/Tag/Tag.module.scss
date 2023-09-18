@@ -1,0 +1,49 @@
+@import '@/styles/mixin.scss';
+
+.tag{
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.s{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.m{
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.ghost{
+    border: 1px solid $text;
+}
+
+.red{
+    color: #ffffff;
+    background: $secondary;
+    font-weight: 500;
+    border: 1px solid $secondary;
+}
+
+.grey{
+    color: $bg;
+    background: $text;
+    font-weight: 500;
+}
+
+.green{
+    color: $third;
+    background: $third-light;
+    font-weight: 500;
+    border: 1px solid $third-light;
+}
+
+.primary{
+    color: $primary;
+    background: none;
+    border: 1px solid $primary;
+}

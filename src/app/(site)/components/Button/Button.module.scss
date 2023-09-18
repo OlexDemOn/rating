@@ -1,0 +1,41 @@
+@import '@/styles/mixin.scss';
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid $text;
+    outline-offset: -5px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        outline-offset: 0px;
+    }
+}
+
+.primary{
+    background: $primary;
+    color: white;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+.ghost{
+    background: none;
+    color: $text;
+}
+
+.arrow {
+    display: inline-block;
+}
+
+.down svg{
+    transform: rotate(90deg);
+}

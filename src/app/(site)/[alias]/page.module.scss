@@ -1,0 +1,22 @@
+@import '@/styles/mixin.scss';
+
+.cart_container{
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.cart{
+    display: flex;
+    position: relative;
+    gap: 15px;
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+}
+.img_block{
+    position: relative;
+    width: 200px;
+    height: 100%;
+}
